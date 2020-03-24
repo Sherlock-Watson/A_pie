@@ -1,0 +1,30 @@
+.drop-toggle {
+    padding: 0 11px 2px;
+    margin-bottom: -1px;
+    cursor: default;
+    height: auto !important;
+}
+a {
+    background-color: transparent;
+    text-decoration: none;
+}
+.icon-caret-down {
+    display: inline-block;
+    height: 0;
+    width: 0;
+    border-top: 4px solid #666;
+    border-left: 4px dashed transparent;
+    border-right: 4px dashed transparent;
+    overflow: hidden;
+}
+:hover.dropdown-menu {
+display: block;
+}
+footer {
+    clear: both;
+    background-color: #3c3c3c;
+    color: #c2c2c2;
+    line-height: 22px;
+    padding-bottom: 20px;
+    font-size: 12px;
+}
