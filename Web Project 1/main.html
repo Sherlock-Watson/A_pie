@@ -2,12 +2,13 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" type="text/css" href="Main.css" media="all">
+    <link rel="stylesheet" type="text/css" href="css/reset.css" media="all">
+    <link rel="stylesheet" type="text/css" href="css/Main.css" media="all">
     <title>首页</title>
 </head>
 <body>
 <nav>
-    <ul>
+    <ul class="nav-left">
         <li>
             <a href="main.html">首页</a>
         </li>
@@ -17,29 +18,106 @@
         <li>
             <a href="">搜索</a>
         </li>
-        <li>
-            <span class="drop-toggle">个人中心
-                <i class="icon-caret-down"></i>
-            </span>
-            <div class="dropdown-menu" style=" display: block">
-                <ul>
-                    <li>
-                        <a href="">上传</a>
-                    </li>
-                    <li>
-                        <a href="">我的照片</a>
-                    </li>
-                    <li>
-                        <a href="">我的收藏</a>
-                    </li>
-                    <li>
-                        <a href="index.html">登入</a>
-                    </li>
-                </ul>
-            </div>
-        </li>
     </ul>
+    <div class="drop-toggle">
+        <span id="myAccount">个人中心
+            <i class="icon-caret-down"></i>
+        </span>
+        <ul class="dropdown-menu">
+            <li>
+                <a href="">上传</a>
+            </li>
+            <li>
+                <a href="">我的照片</a>
+            </li>
+            <li>
+                <a href="">我的收藏</a>
+            </li>
+            <li>
+                <a href="index.html">登入</a>
+            </li>
+        </ul>
+    </div>
 </nav>
+
+<div class="top-picture">
+    <img id="topPicture" src="img/topPicture1.jpg" alt="top picture">
+</div>
+
+<div class="contents">
+    <div class="row">
+        <a class="col" href="">
+            <div class="img">
+                <img id="home-1" src="img/home-1.jpg" alt="church-1">
+            </div>
+            <h5 class="picture-title">圣索菲亚大教堂</h5>
+            <p>这座教堂历史悠久，建筑风格很有特色，作为一座哥特式教堂凝结了几代人的心血，反正很好看就是了。</p>
+        </a>
+
+        <a class="col" href="">
+            <div class="img">
+                <img id="home-2" src="img/home-2.jpg" alt="church-2">
+            </div>
+            <h5 class="picture-title">原力遗迹博物馆</h5>
+            <p>天行者陨落之后，黑暗原力的力量逐渐显现，绝地武士们虽然沉寂，尤达大师也已经逝世，但是原力不会就此消失。</p>
+        </a>
+
+        <a class="col" href="">
+            <div class="img">
+                <img id="home-3" src="img/home-3.jpg" alt="church-3">
+            </div>
+            <h5 class="picture-title">守夜人的城堡</h5>
+            <p>长夜将至， 我从今开始守望， 至死方休。 我将不娶妻， 不封地， 不生子。 我将不戴宝冠， 不争荣宠。
+                我将尽忠职守， 生死于斯。 我是黑暗中的利剑， 长城上的守卫， 抵御寒冷的烈焰， 破晓时分的光线，
+                唤醒眠者的号角， 守护王国的铁卫。 我将生命与荣耀献给守夜人， 今夜如此， 夜夜皆然。</p>
+        </a>
+
+        <a class="col" href="">
+            <div class="img">
+                <img id="home-7" src="img/home-1.jpg" alt="church-1">
+            </div>
+            <h5 class="picture-title">圣索菲亚大教堂</h5>
+            <p>这座教堂历史悠久，建筑风格很有特色，作为一座哥特式教堂凝结了几代人的心血，反正很好看就是了。</p>
+        </a>
+    </div>
+
+    <div class="row">
+        <a class="col">
+            <div class="img">
+                <img id="home-4" src="img/home-4.jpg" alt="church-4">
+            </div>
+            <h5 class="picture-title">圣索菲亚大教堂</h5>
+            <p>这座教堂历史悠久，建筑风格很有特色，作为一座哥特式教堂凝结了几代人的心血，反正很好看就是了。</p>
+        </a>
+
+        <a class="col" href="">
+            <div class="img">
+                <img id="home-5" src="img/home-5.jpg" alt="church-5">
+            </div>
+            <h5 class="picture-title">原力遗迹博物馆</h5>
+            <p>天行者陨落之后，黑暗原力的力量逐渐显现，绝地武士们虽然沉寂，尤达大师也已经逝世，但是原力不会就此消失。</p>
+        </a>
+
+        <a class="col" href="">
+            <div class="img">
+                <img id="home-6" src="img/home-6.jpg" alt="church-6">
+            </div>
+            <h5 class="picture-title">守夜人的城堡</h5>
+            <p>长夜将至， 我从今开始守望， 至死方休。 我将不娶妻， 不封地， 不生子。 我将不戴宝冠， 不争荣宠。
+                我将尽忠职守， 生死于斯。 我是黑暗中的利剑， 长城上的守卫， 抵御寒冷的烈焰， 破晓时分的光线，
+                唤醒眠者的号角， 守护王国的铁卫。 我将生命与荣耀献给守夜人， 今夜如此， 夜夜皆然。</p>
+        </a>
+
+        <a class="col" href="">
+        <div class="img">
+            <img id="home-8" src="img/home-4.jpg" alt="church-4">
+        </div>
+        <h5 class="picture-title">圣索菲亚大教堂</h5>
+        <p>这座教堂历史悠久，建筑风格很有特色，作为一座哥特式教堂凝结了几代人的心血，反正很好看就是了。</p>
+    </a>
+    </div>
+</div>
+
 <footer>
     Copyright &copy; 2019-2021 Web fundamental. All Rights Reserved. 备案号沪BILIBILI备12138号-1
 </footer>
