@@ -1,0 +1,87 @@
+.drop-toggle {
+    padding: 0 11px 2px;
+    margin-bottom: -1px;
+    cursor: default;
+    height: auto !important;
+    position: relative;
+    display: inline-block;
+}
+
+ul.dropdown-menu {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    width: 150px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    list-style: none;
+    text-align: left;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 0;
+}
+
+.drop-toggle:hover .dropdown-menu {
+    display: block;
+}
+
+.nav-left {
+    list-style: none;
+    display: inline-flex;
+    margin-left: 10px;
+}
+
+#myAccount {
+    margin-right: 20px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+    overflow: visible;
+    background-color: lightseagreen;
+}
+
+.nav-left a, #myAccount, .active{
+    display: block;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    padding: 14px 16px;
+}
+
+.active {
+    background-color: #333;
+}
+
+.dropdown-menu a {
+    text-decoration: none;
+    text-align: left;
+    font-size: 14px;
+    color: black;
+    line-height: 30px;
+    padding-left: 20px;
+}
+
+.dropdown-menu a img {
+    vertical-align: middle;
+}
+
+.dropdown-menu li:hover {
+    background-color: lightgray;
+}
+
+.nav-left a:hover, #myAccount:hover {
+    background-color: #1f928a;
+}
+
+.icon-caret-down {
+    display: inline-block;
+    height: 0;
+    width: 0;
+    border-top: 4px solid white;
+    border-left: 4px dashed transparent;
+    border-right: 4px dashed transparent;
+    overflow: hidden;
+}

@@ -3,20 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" type="text/css" href="css/reset.css" media="all">
+    <link rel="stylesheet" type="text/css" href="css/navigation.css" media="all">
     <link rel="stylesheet" type="text/css" href="css/Main.css" media="all">
     <title>首页</title>
 </head>
 <body>
-<nav>
+<nav id="nav">
     <ul class="nav-left">
+        <li class="active">首页</li>
         <li>
-            <a href="main.html">首页</a>
+            <a href="browse.html">浏览</a>
         </li>
         <li>
-            <a href="">浏览</a>
-        </li>
-        <li>
-            <a href="">搜索</a>
+            <a href="search.html">搜索</a>
         </li>
     </ul>
     <div class="drop-toggle">
@@ -25,28 +24,36 @@
         </span>
         <ul class="dropdown-menu">
             <li>
-                <a href="">上传</a>
+                <a href="upload.html">
+                    <img src="img/upload.svg" alt="upload" width="20" height="20">上传
+                </a>
             </li>
             <li>
-                <a href="">我的照片</a>
+                <a href="myPhoto.html">
+                    <img src="img/image.svg" alt="image" width="20" height="20"> 我的照片
+                </a>
             </li>
             <li>
-                <a href="">我的收藏</a>
+                <a href="like.html">
+                    <img src="img/like_filled.svg" alt="like" width="20" height="20">我的收藏
+                </a>
             </li>
             <li>
-                <a href="index.html">登入</a>
+                <a href="index.html">
+                    <img src="img/user.svg" alt="login" width="20" height="20">登入
+                </a>
             </li>
         </ul>
     </div>
 </nav>
 
 <div class="top-picture">
-    <img id="topPicture" src="img/topPicture1.jpg" alt="top picture">
+    <img id="topPicture" src="img/Forest.jpg" alt="top picture">
 </div>
 
 <div class="contents">
     <div class="row">
-        <a class="col" href="">
+        <a class="col" href="details.html">
             <div class="img">
                 <img id="home-1" src="img/home-1.jpg" alt="church-1">
             </div>
@@ -54,7 +61,7 @@
             <p>这座教堂历史悠久，建筑风格很有特色，作为一座哥特式教堂凝结了几代人的心血，反正很好看就是了。</p>
         </a>
 
-        <a class="col" href="">
+        <a class="col" href="details.html">
             <div class="img">
                 <img id="home-2" src="img/home-2.jpg" alt="church-2">
             </div>
@@ -62,7 +69,7 @@
             <p>天行者陨落之后，黑暗原力的力量逐渐显现，绝地武士们虽然沉寂，尤达大师也已经逝世，但是原力不会就此消失。</p>
         </a>
 
-        <a class="col" href="">
+        <a class="col" href="details.html">
             <div class="img">
                 <img id="home-3" src="img/home-3.jpg" alt="church-3">
             </div>
@@ -72,7 +79,7 @@
                 唤醒眠者的号角， 守护王国的铁卫。 我将生命与荣耀献给守夜人， 今夜如此， 夜夜皆然。</p>
         </a>
 
-        <a class="col" href="">
+        <a class="col" href="details.html">
             <div class="img">
                 <img id="home-7" src="img/home-1.jpg" alt="church-1">
             </div>
@@ -82,7 +89,43 @@
     </div>
 
     <div class="row">
-        <a class="col">
+        <a class="col" href="details.html">
+            <div class="img">
+                <img id="home-9" src="img/home-4.jpg" alt="church-4">
+            </div>
+            <h5 class="picture-title">圣索菲亚大教堂</h5>
+            <p>这座教堂历史悠久，建筑风格很有特色，作为一座哥特式教堂凝结了几代人的心血，反正很好看就是了。</p>
+        </a>
+
+        <a class="col" href="details.html">
+            <div class="img">
+                <img id="home-10" src="img/home-5.jpg" alt="church-5">
+            </div>
+            <h5 class="picture-title">原力遗迹博物馆</h5>
+            <p>天行者陨落之后，黑暗原力的力量逐渐显现，绝地武士们虽然沉寂，尤达大师也已经逝世，但是原力不会就此消失。</p>
+        </a>
+
+        <a class="col" href="details.html">
+            <div class="img">
+                <img id="home-11" src="img/home-6.jpg" alt="church-6">
+            </div>
+            <h5 class="picture-title">守夜人的城堡</h5>
+            <p>长夜将至， 我从今开始守望， 至死方休。 我将不娶妻， 不封地， 不生子。 我将不戴宝冠， 不争荣宠。
+                我将尽忠职守， 生死于斯。 我是黑暗中的利剑， 长城上的守卫， 抵御寒冷的烈焰， 破晓时分的光线，
+                唤醒眠者的号角， 守护王国的铁卫。 我将生命与荣耀献给守夜人， 今夜如此， 夜夜皆然。</p>
+        </a>
+
+        <a class="col" href="details.html">
+        <div class="img">
+            <img id="home-12" src="img/home-4.jpg" alt="church-4">
+        </div>
+        <h5 class="picture-title">圣索菲亚大教堂</h5>
+        <p>这座教堂历史悠久，建筑风格很有特色，作为一座哥特式教堂凝结了几代人的心血，反正很好看就是了。</p>
+    </a>
+    </div>
+
+    <div class="row">
+        <a class="col" href="details.html">
             <div class="img">
                 <img id="home-4" src="img/home-4.jpg" alt="church-4">
             </div>
@@ -90,7 +133,7 @@
             <p>这座教堂历史悠久，建筑风格很有特色，作为一座哥特式教堂凝结了几代人的心血，反正很好看就是了。</p>
         </a>
 
-        <a class="col" href="">
+        <a class="col" href="details.html">
             <div class="img">
                 <img id="home-5" src="img/home-5.jpg" alt="church-5">
             </div>
@@ -98,7 +141,7 @@
             <p>天行者陨落之后，黑暗原力的力量逐渐显现，绝地武士们虽然沉寂，尤达大师也已经逝世，但是原力不会就此消失。</p>
         </a>
 
-        <a class="col" href="">
+        <a class="col" href="details.html">
             <div class="img">
                 <img id="home-6" src="img/home-6.jpg" alt="church-6">
             </div>
@@ -108,18 +151,40 @@
                 唤醒眠者的号角， 守护王国的铁卫。 我将生命与荣耀献给守夜人， 今夜如此， 夜夜皆然。</p>
         </a>
 
-        <a class="col" href="">
-        <div class="img">
-            <img id="home-8" src="img/home-4.jpg" alt="church-4">
-        </div>
-        <h5 class="picture-title">圣索菲亚大教堂</h5>
-        <p>这座教堂历史悠久，建筑风格很有特色，作为一座哥特式教堂凝结了几代人的心血，反正很好看就是了。</p>
-    </a>
+        <a class="col" href="details.html">
+            <div class="img">
+                <img id="home-8" src="img/home-4.jpg" alt="church-4">
+            </div>
+            <h5 class="picture-title">圣索菲亚大教堂</h5>
+            <p>这座教堂历史悠久，建筑风格很有特色，作为一座哥特式教堂凝结了几代人的心血，反正很好看就是了。</p>
+        </a>
     </div>
 </div>
 
+<div class="up-refresh">
+    <div class="up">
+        <a href="#nav">
+            <img src="img/up.svg" alt="up" width="30" height="30">
+        </a>
+    </div>
+        <div class="refresh" onclick="alert('图片已刷新')">
+            <img src="img/refresh.svg" alt="refresh" width="30" height="30">
+        </div>
+</div>
+
 <footer>
-    Copyright &copy; 2019-2021 Web fundamental. All Rights Reserved. 备案号沪BILIBILI备12138号-1
+    <div class="media-links">
+        <a href="https://www.starwars.com"><img src="img/social_fb.svg" alt="social media" width="20" height="20"></a>
+        <a href="https://www.starwars.com"><img src="img/social_github.svg" alt="social media" width="20" height="20"></a>
+        <a href="https://www.starwars.com"><img src="img/social_twitter.svg" alt="social media" width="20" height="20"></a>
+        <a href="https://www.starwars.com"><img src="img/social_youtube.svg" alt="social media" width="20" height="20"></a>
+    </div>
+    <div class="protocols">
+        <a href="https://starwars.com">原力不滥用条约</a> | <a href="https://starwars.com">守夜人条约</a> |
+        <a href="https://starwars.com">John Know Nothing Snow</a> | <a href="https://starwars.com">Hail Hydra</a> |
+        <a href="https://starwars.com">机器人第零定律</a> | <a href="https://starwars.com">顺边的翅膀</a>
+    </div>
+    <div class="copyright">Copyright &copy; 2019-2021 May the force be with you. All Rights Reserved. 备案号浙FORCE备19930号-9</div>
 </footer>
 </body>
 </html>

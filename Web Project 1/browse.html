@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>浏览</title>
+    <link rel="stylesheet" type="text/css" href="css/reset.css" media="all">
+    <link rel="stylesheet" type="text/css" href="css/navigation.css" media="all">
+    <link rel="stylesheet" type="text/css" href="css/Browse.css" media="all">
+    <link rel="stylesheet" type="text/css" href="css/footer.css" media="all">
+</head>
+<script type="text/javascript" src="js/selects.js"></script>
+<body>
+<nav id="nav">
+    <ul class="nav-left">
+        <li>
+            <a href="main.html">首页</a>
+        </li>
+        <li class="active">浏览</li>
+        <li>
+            <a href="">搜索</a>
+        </li>
+    </ul>
+    <div class="drop-toggle">
+        <span id="myAccount">个人中心
+            <i class="icon-caret-down"></i>
+        </span>
+        <ul class="dropdown-menu">
+            <li>
+                <a href="">
+                    <img src="img/upload.svg" alt="upload" width="20" height="20">上传
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <img src="img/image.svg" alt="image" width="20" height="20"> 我的照片
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <img src="img/like_filled.svg" alt="like" width="20" height="20">我的收藏
+                </a>
+            </li>
+            <li>
+                <a href="index.html">
+                    <img src="img/user.svg" alt="login" width="20" height="20">登入
+                </a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+<aside class="aside-left">
+    <div class="search-by-title">
+        <div class="search-title"><h5>按照标题搜索</h5></div>
+        <div class="search-input-button">
+            <input type="search">
+            <div class="btSearch" onclick="alert('搜索完成')">
+                <input type="button" name="search" value="搜索">
+            </div>
+        </div>
+    </div>
+
+    <div class="hot-content">
+        <table>
+            <tr>
+                <th>热门国家快速浏览</th>
+            </tr>
+            <tr>
+                <td>
+                    <div class="country" onclick="alert('中国')">中国</div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="country" onclick="alert('日本')">日本</div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="country" onclick="alert('意大利')">意大利</div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="country" onclick="alert('美国')">美国</div>
+                </td>
+            </tr>
+        </table>
+    </div>
+
+    <div class="hot-cities">
+        <table>
+            <tr>
+                <th>热门城市快速浏览</th>
+            </tr>
+            <tr>
+                <td>
+                    <div class="city" onclick="alert('东京')">东京</div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="city" onclick="alert('西雅图')">西雅图</div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="city" onclick="alert('南京')">南京</div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="city" onclick="alert('罗马')">罗马</div>
+                </td>
+            </tr>
+        </table>
+    </div>
+</aside>
+
+<section>
+    <div class="select">
+        <div class="two-selectors">
+            <select name="country" onchange="changeCity(this.value)">
+                <option>--请选择--</option>
+                <option value="0">中国</option>
+<!--                    Shanghai','Kunming','Beijing','Yantai-->
+                <option value="1">日本</option>
+                <option value="2">意大利</option>
+                <option value="3">美国</option>
+            </select>
+            <select id="city">
+                <option>--请选择--</option>
+<!--                <optgroup label="China">-->
+<!--                    <option value="Shanghai">上海</option>-->
+<!--                    <option value="Kunming">昆明</option>-->
+<!--                    <option value="Beijing">北京</option>-->
+<!--                    <option value="Yantai">烟台</option>-->
+<!--                </optgroup>-->
+<!--                <optgroup label="Japan">-->
+<!--                    <option value="Tokyo">东京</option>-->
+<!--&lt;!&ndash;                            Tokyo', 'Osaka', 'Kamakura&ndash;&gt;-->
+<!--                    <option value="Osaka">大阪</option>-->
+<!--                    <option value="Kamakura">镰仓</option>-->
+<!--                </optgroup>-->
+<!--                <optgroup label="Italy">-->
+<!--&lt;!&ndash;                    Roma','Milan','Venice','Florence&ndash;&gt;-->
+<!--                    <option value="Rome">罗马</option>-->
+<!--                    <option value="Milan">米兰</option>-->
+<!--                    <option value="Venice">威尼斯</option>-->
+<!--                    <option value="Florence">佛罗伦萨</option>-->
+<!--                </optgroup>-->
+<!--                <optgroup label="America">-->
+<!--&lt;!&ndash;                New York','San Francisco', 'Washington&ndash;&gt;-->
+<!--                    <option value="New York">纽约</option>-->
+<!--                    <option value="San Francisco">旧金山</option>-->
+<!--                    <option value="Washington">华盛顿</option>-->
+<!--                </optgroup>-->
+            </select>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col">
+            <a class="col-link" href="details.html">
+                <div class="target" id="target-1"></div>
+            </a>
+        </div>
+        <div class="col">
+            <a class="col-link" href="details.html">
+                <div class="target" id="target-2"></div>
+            </a>
+        </div>
+        <div class="col">
+            <a class="col-link" href="details.html">
+                <div class="target" id="target-3"></div>
+            </a>
+        </div>
+        <div class="col">
+            <a class="col-link" href="details.html">
+                <div class="target" id="target-4"></div>
+            </a>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col">
+            <a class="col-link" href="details.html">
+                <div class="target" id="target-5"></div>
+            </a>
+        </div>
+        <div class="col">
+            <a class="col-link" href="details.html">
+                <div class="target" id="target-6"></div>
+            </a>
+        </div>
+        <div class="col">
+            <a class="col-link" href="details.html">
+                <div class="target" id="target-7"></div>
+            </a>
+        </div>
+        <div class="col">
+            <a class="col-link" href="details.html">
+                <div class="target" id="target-8"></div>
+            </a>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col">
+            <a class="col-link" href="details.html">
+                <div class="target" id="target-9"></div>
+            </a>
+        </div>
+        <div class="col">
+            <a class="col-link" href="details.html">
+                <div class="target" id="target-10"></div>
+            </a>
+        </div>
+        <div class="col">
+            <a class="col-link" href="details.html">
+                <div class="target" id="target-11"></div>
+            </a>
+        </div>
+        <div class="col">
+            <a class="col-link" href="details.html">
+                <div class="target" id="target-12"></div>
+            </a>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col">
+            <a class="col-link" href="details.html">
+                <div class="target" id="target-13"></div>
+            </a>
+        </div>
+        <div class="col">
+            <a class="col-link" href="details.html">
+                <div class="target" id="target-14"></div>
+            </a>
+        </div>
+        <div class="col">
+            <a class="col-link" href="details.html">
+                <div class="target" id="target-15"></div>
+            </a>
+        </div>
+        <div class="col">
+            <a class="col-link" href="details.html">
+                <div class="target" id="target-16"></div>
+            </a>
+        </div>
+    </div>
+</section>
+
+<div class="pages">
+    <ul>
+        <li><a href="#"><<</a></li>
+        <li class="active-page">1</li>
+        <li><a href="#">3</a></li>
+        <li><a href="#">4</a></li>
+        <li><a href="#">5</a></li>
+        <li><a href="#">6</a></li>
+        <li><a href="#">7</a></li>
+        <li><a href="#">8</a></li>
+        <li><a href="#">>></a></li>
+    </ul>
+</div>
+
+<footer>
+    Copyright &copy; 2019-2021 May the force be with you. All Rights Reserved. 备案号浙FORCE备19930号-9
+</footer>
+</body>
+</html>

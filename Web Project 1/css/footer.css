@@ -1,0 +1,10 @@
+footer {
+    clear: both;
+    background-color: lightseagreen;
+    color: white;
+    line-height: 22px;
+    padding: 20px;
+    font-size: 12px;
+    vertical-align: bottom;
+    text-align: center;
+}

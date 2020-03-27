@@ -1,0 +1,11 @@
+.target {
+    background-image: url('../img/Forest.jpg');
+    padding-bottom:100%;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.col {
+    width: 70px;
+    height: 70px;
+}
