@@ -17,7 +17,7 @@
         </li>
         <li class="active">浏览</li>
         <li>
-            <a href="">搜索</a>
+            <a href="search.html">搜索</a>
         </li>
     </ul>
     <div class="drop-toggle">
@@ -148,45 +148,47 @@
 <section>
     <div class="select">
         <div class="two-selectors">
-            <select name="country" onchange="changeCity(this.value)">
-                <option>--请选择--</option>
-                <option value="0">中国</option>
-<!--                    Shanghai','Kunming','Beijing','Yantai-->
-                <option value="1">日本</option>
-                <option value="2">意大利</option>
-                <option value="3">美国</option>
-            </select>
-            <select id="city">
-                <option>--请选择--</option>
-<!--                <optgroup label="China">-->
-<!--                    <option value="Shanghai">上海</option>-->
-<!--                    <option value="Kunming">昆明</option>-->
-<!--                    <option value="Beijing">北京</option>-->
-<!--                    <option value="Yantai">烟台</option>-->
-<!--                </optgroup>-->
-<!--                <optgroup label="Japan">-->
-<!--                    <option value="Tokyo">东京</option>-->
-<!--&lt;!&ndash;                            Tokyo', 'Osaka', 'Kamakura&ndash;&gt;-->
-<!--                    <option value="Osaka">大阪</option>-->
-<!--                    <option value="Kamakura">镰仓</option>-->
-<!--                </optgroup>-->
-<!--                <optgroup label="Italy">-->
-<!--&lt;!&ndash;                    Roma','Milan','Venice','Florence&ndash;&gt;-->
-<!--                    <option value="Rome">罗马</option>-->
-<!--                    <option value="Milan">米兰</option>-->
-<!--                    <option value="Venice">威尼斯</option>-->
-<!--                    <option value="Florence">佛罗伦萨</option>-->
-<!--                </optgroup>-->
-<!--                <optgroup label="America">-->
-<!--&lt;!&ndash;                New York','San Francisco', 'Washington&ndash;&gt;-->
-<!--                    <option value="New York">纽约</option>-->
-<!--                    <option value="San Francisco">旧金山</option>-->
-<!--                    <option value="Washington">华盛顿</option>-->
-<!--                </optgroup>-->
-            </select>
-            <div class="filter" onclick="alert('筛选')">
-                <input type="button" value="筛选">
-            </div>
+            <form>
+                <select name="country" onchange="changeCity(this.value)">
+                    <option>--请选择--</option>
+                    <option value="0">中国</option>
+                    <!--                    Shanghai','Kunming','Beijing','Yantai-->
+                    <option value="1">日本</option>
+                    <option value="2">意大利</option>
+                    <option value="3">美国</option>
+                </select>
+                <select id="city">
+                    <option>--请选择--</option>
+                    <!--                <optgroup label="China">-->
+                    <!--                    <option value="Shanghai">上海</option>-->
+                    <!--                    <option value="Kunming">昆明</option>-->
+                    <!--                    <option value="Beijing">北京</option>-->
+                    <!--                    <option value="Yantai">烟台</option>-->
+                    <!--                </optgroup>-->
+                    <!--                <optgroup label="Japan">-->
+                    <!--                    <option value="Tokyo">东京</option>-->
+                    <!--&lt;!&ndash;                            Tokyo', 'Osaka', 'Kamakura&ndash;&gt;-->
+                    <!--                    <option value="Osaka">大阪</option>-->
+                    <!--                    <option value="Kamakura">镰仓</option>-->
+                    <!--                </optgroup>-->
+                    <!--                <optgroup label="Italy">-->
+                    <!--&lt;!&ndash;                    Roma','Milan','Venice','Florence&ndash;&gt;-->
+                    <!--                    <option value="Rome">罗马</option>-->
+                    <!--                    <option value="Milan">米兰</option>-->
+                    <!--                    <option value="Venice">威尼斯</option>-->
+                    <!--                    <option value="Florence">佛罗伦萨</option>-->
+                    <!--                </optgroup>-->
+                    <!--                <optgroup label="America">-->
+                    <!--&lt;!&ndash;                New York','San Francisco', 'Washington&ndash;&gt;-->
+                    <!--                    <option value="New York">纽约</option>-->
+                    <!--                    <option value="San Francisco">旧金山</option>-->
+                    <!--                    <option value="Washington">华盛顿</option>-->
+                    <!--                </optgroup>-->
+                </select>
+                <div class="filter" onclick="alert('筛选')">
+                    <input type="button" value="筛选">
+                </div>
+            </form>
         </div>
     </div>
 

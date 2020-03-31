@@ -1,12 +1,15 @@
 .search-part {
-    border: lightgray solid 1px;
-    border-radius: 6px;
+    /*border: lightgray solid 1px;*/
+    /*border-radius: 6px;*/
     margin: 10px 50px;
 }
 
 .search-title {
-    background-color: lightgray;
+    /*background-color: lightgray;*/
+    color: black;
     border-radius: 6px 6px 0 0;
+    /*padding: 10px 20px;*/
+    padding-left: 5%;
 }
 
 .filter-by-title, .filter-by-description, .filter {
@@ -34,13 +37,107 @@ input[type="button"],input[type="submit"],input[type="checkbox"], input[type="ra
 
 input[type="search"], textarea {
     padding: 10px 0;
-    border: lightseagreen solid 1px;
+    border: grey solid 1px;
     border-radius: 6px;
-    color: lightseagreen;
+    color: grey;
     margin: 10px 0;
     width: 100%;
 }
 
 textarea {
     height: 50px;
+}
+
+.result-part {
+    margin: 50px;
+}
+
+.result-title {
+    font-size: 16px;
+    padding-left: 5%;
+}
+
+hr {
+    width: 90%;
+    border-width:0;
+    height: 1px;
+    color:grey;
+    background-color:lightgray;
+}
+
+.target {
+    background-image: url("../img/s.jpg");
+    padding-bottom:100%;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.picture {
+    width: 200px;
+    height: 150px;
+    box-shadow: 0 0 8px grey;
+    overflow: hidden;
+    float: left;
+}
+
+.result-content {
+    margin: 20px;
+    clear: both;
+    display: table;
+}
+
+.result-text {
+    float: right;
+    width: 80%;
+}
+
+.result-text p {
+    margin-top: 40px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    color: dimgrey;
+}
+
+.result-content a {
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+}
+
+.result-content a:hover {
+    color: lightseagreen;
+}
+
+.pages {
+    clear:both;
+    width: 100%;
+}
+
+.pages .pages-list{
+    text-align: center;
+}
+
+.pages ul {
+    list-style: none;
+    display: inline-flex;
+}
+
+.pages li {
+    padding: 20px;
+}
+
+.pages a {
+    text-decoration: none;
+    color: lightseagreen;
+}
+
+.pages a:hover {
+    color: #27d6ce;
+}
+
+.active-page {
+    color: #115b53;
 }

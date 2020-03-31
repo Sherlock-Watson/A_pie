@@ -3,8 +3,89 @@
 <head>
     <meta charset="UTF-8">
     <title>图片上传</title>
+    <link rel="stylesheet" type="text/css" href="css/reset.css" media="all">
+    <link rel="stylesheet" type="text/css" href="css/Navigation.css" media="all">
+    <link rel="stylesheet" type="text/css" href="css/Upload.css" media="all">
+    <link rel="stylesheet" type="text/css" href="css/Footer.css" media="all">
+    <script src="https://cdn.bootcss.com/jquery/2.2.4/jquery.min.js"></script>
 </head>
 <body>
+<nav id="nav">
+    <ul class="nav-left">
+        <li>
+            <a href="main.html">首页</a>
+        </li>
+        <li>
+            <a href="browse.html">浏览</a>
+        </li>
+        <li>
+            <a href="search.html">搜索</a>
+        </li>
+    </ul>
+    <div class="drop-toggle">
+        <span id="myAccount">个人中心
+            <i class="icon-caret-down"></i>
+        </span>
+        <ul class="dropdown-menu">
+            <li>
+                <a href="upload.html">
+                    <img src="img/upload.svg" alt="upload" width="20" height="20">上传
+                </a>
+            </li>
+            <li>
+                <a href="myPhoto.html">
+                    <img src="img/image.svg" alt="image" width="20" height="20"> 我的照片
+                </a>
+            </li>
+            <li>
+                <a href="like.html">
+                    <img src="img/like_filled.svg" alt="like" width="20" height="20">我的收藏
+                </a>
+            </li>
+            <li>
+                <a href="index.html">
+                    <img src="img/user.svg" alt="login" width="20" height="20">登入
+                </a>
+            </li>
+        </ul>
+    </div>
+</nav>
 
+<div class="contents">
+    <div class="upload-title">上传</div>
+    <form>
+        <div class="preview">
+            <input type="file" accept="image/*"
+                   name="file0" id="file0" multiple>
+            <img src="" id="img0" alt="图片未上传">
+        </div>
+        <input type="button" value="上传">
+        <p>
+            图片标题：<br>
+            <input type="text">
+        </p>
+        <p>
+            图片描述：<br>
+            <textarea></textarea>
+        </p>
+        <p>
+            拍摄国家：<br>
+            <input type="text">
+        </p>
+        <p>
+            拍摄城市：<br>
+            <input type="text">
+        </p>
+        <a href="myPhoto.html">
+            <input type="button" value="提交" onclick="alert('已提交')">
+        </a>
+    </form>
+    <script type="text/javascript" src="js/upload.js"></script>
+</div>
+
+
+<footer>
+    Copyright &copy; 2019-2021 May the force be with you. All Rights Reserved. 备案号浙FORCE备19930号-9
+</footer>
 </body>
 </html>
