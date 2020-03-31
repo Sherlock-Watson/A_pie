@@ -1,0 +1,46 @@
+.search-part {
+    border: lightgray solid 1px;
+    border-radius: 6px;
+    margin: 10px 50px;
+}
+
+.search-title {
+    background-color: lightgray;
+    border-radius: 6px 6px 0 0;
+}
+
+.filter-by-title, .filter-by-description, .filter {
+    margin: 20px;
+}
+
+input[type="button"],input[type="submit"]  {
+    border: lightseagreen solid 1px;
+    text-align: center;
+    width: 100px;
+    font-weight: bold;
+    background-image: linear-gradient(lightseagreen, #207c74);
+    color: white;
+    padding: 10px 0;
+    border-radius: 6px;
+}
+
+input[type="button"]:active,input[type="submit"]:active {
+    background-image: linear-gradient(#207c74, lightseagreen);
+}
+
+input[type="button"],input[type="submit"],input[type="checkbox"], input[type="radio"], select:hover {
+    cursor: pointer;
+}
+
+input[type="search"], textarea {
+    padding: 10px 0;
+    border: lightseagreen solid 1px;
+    border-radius: 6px;
+    color: lightseagreen;
+    margin: 10px 0;
+    width: 100%;
+}
+
+textarea {
+    height: 50px;
+}
