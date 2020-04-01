@@ -58,7 +58,7 @@ nav {
 }
 
 .active {
-    background-color: #17453d;
+    background-image: linear-gradient(#22766e 0%, #215951 100%);
 }
 
 .dropdown-menu a {
@@ -79,7 +79,7 @@ nav {
 }
 
 .nav-left a:hover, #myAccount:hover {
-    background-color: #1c6d65;
+    background-image: linear-gradient(#21948c 0%, #226c64 100%);
 }
 
 .icon-caret-down {
