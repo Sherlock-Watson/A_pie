@@ -101,6 +101,7 @@ section {
 }
 
 .filter input {
+    margin: 20px 0;
     padding: 10px;
     border: lightseagreen solid 1px;
     text-align: center;
@@ -112,7 +113,7 @@ section {
 }
 
 .filter input:active {
-    background-image: linear-gradient(#207c74, lightseagreen);
+    background-image: radial-gradient(#207c74, #1f5951);
 }
 
 .two-selectors {

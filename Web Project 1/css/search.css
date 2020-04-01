@@ -1,15 +1,14 @@
 .search-part {
-    /*border: lightgray solid 1px;*/
-    /*border-radius: 6px;*/
     margin: 10px 50px;
 }
 
-.search-title {
-    /*background-color: lightgray;*/
+.title {
     color: black;
-    border-radius: 6px 6px 0 0;
-    /*padding: 10px 20px;*/
     padding-left: 5%;
+}
+
+.title h5 {
+    font-weight: 100;
 }
 
 .filter-by-title, .filter-by-description, .filter {
@@ -28,7 +27,7 @@ input[type="button"],input[type="submit"]  {
 }
 
 input[type="button"]:active,input[type="submit"]:active {
-    background-image: linear-gradient(#207c74, lightseagreen);
+    background-image: radial-gradient(#207c74, #1f5951);
 }
 
 input[type="button"],input[type="submit"],input[type="checkbox"], input[type="radio"], select:hover {
@@ -36,25 +35,21 @@ input[type="button"],input[type="submit"],input[type="checkbox"], input[type="ra
 }
 
 input[type="search"], textarea {
-    padding: 10px 0;
+    padding: 10px;
     border: grey solid 1px;
     border-radius: 6px;
-    color: grey;
+    color: dimgrey;
     margin: 10px 0;
     width: 100%;
+    font-size: 16px;
 }
 
 textarea {
     height: 50px;
 }
 
-.result-part {
+.result-part, .contents {
     margin: 50px;
-}
-
-.result-title {
-    font-size: 16px;
-    padding-left: 5%;
 }
 
 hr {
@@ -80,18 +75,18 @@ hr {
     float: left;
 }
 
-.result-content {
+.item-content {
     margin: 20px;
     clear: both;
     display: table;
 }
 
-.result-text {
+.item-text {
     float: right;
     width: 80%;
 }
 
-.result-text p {
+.item-text p {
     margin-top: 40px;
     text-overflow: ellipsis;
     overflow: hidden;
@@ -101,13 +96,13 @@ hr {
     color: dimgrey;
 }
 
-.result-content a {
+.item-content a {
     text-decoration: none;
     color: black;
     font-size: 20px;
 }
 
-.result-content a:hover {
+.item-content a:hover {
     color: lightseagreen;
 }
 
@@ -140,4 +135,26 @@ hr {
 
 .active-page {
     color: #115b53;
+}
+
+.item-content > input[type="button"] {
+    margin: 10px 0 10px 50px;
+}
+
+input.modify {
+    border: deepskyblue solid 1px;
+    background-image: linear-gradient(deepskyblue 0%, #007ea8 100%);
+}
+
+input.delete {
+    border: mediumpurple solid 1px;
+    background-image: linear-gradient(mediumpurple 0%, #5e4c98 100%);
+}
+
+input.modify:active {
+    background-image: radial-gradient(#007ea8 , #006f9a);
+}
+
+input.delete:active {
+    background-image: radial-gradient(#5e4c98, #413d7b);
 }
