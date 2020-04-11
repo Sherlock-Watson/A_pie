@@ -3,10 +3,83 @@
     padding-left: 5%;
 }
 
+.contents {
+    margin: 50px;
+}
+
+#title {
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#author {
+    padding: 20px;
+    font-size: 12px;
+    font-weight: 100;
+    text-align: center;
+}
+
+.detail-image {
+    float: left;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+}
+
+img {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.aside-right {
+    float: right;
+    width: 50%;
+    box-sizing: border-box;
+    padding: 0 15% 0 5%;
+}
+
+.like-number-number {
+    text-align: center;
+    font-size: 40px;
+    color: lightseagreen;
+    font-weight: bold;
+}
+
+.like-number {
+    margin-bottom: 20px;
+}
+
+.image-details > ul {
+    list-style: none;
+    padding-top: 20px;
+}
+
+.image-details > ul > li {
+    padding: 10px 0;
+}
+
+.aside-right hr {
+    width: 100%;
+}
+
+p {
+    clear:both;
+    line-height: 30px;
+    text-indent: 2em;
+    padding: 0 3%;
+}
+
+.collection {
+    display: flex;
+    justify-content: center;
+}
+
 input[type="button"],input[type="submit"]  {
+    margin-top: 20px;
     border: lightseagreen solid 1px;
     text-align: center;
-    width: 100px;
+    width: 90%;
     font-weight: bold;
     background-image: linear-gradient(lightseagreen, #207c74);
     color: white;
