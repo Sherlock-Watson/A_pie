@@ -1,0 +1,27 @@
+.title {
+    color: black;
+    padding-left: 5%;
+}
+
+input[type="button"],input[type="submit"]  {
+    border: lightseagreen solid 1px;
+    text-align: center;
+    width: 100px;
+    font-weight: bold;
+    background-image: linear-gradient(lightseagreen, #207c74);
+    color: white;
+    padding: 10px 0;
+    border-radius: 6px;
+}
+
+input[type="button"]:active,input[type="submit"]:active {
+    background-image: radial-gradient(#207c74, #1f5951);
+}
+
+hr {
+    width: 90%;
+    border-width:0;
+    height: 1px;
+    color:grey;
+    background-color:lightgray;
+}

@@ -3,8 +3,94 @@
 <head>
     <meta charset="UTF-8">
     <title>图片详情</title>
+    <link rel="stylesheet" type="text/css" href="css/reset.css" media="all">
+    <link rel="stylesheet" type="text/css" href="css/Navigation.css" media="all">
+    <link rel="stylesheet" type="text/css" href="css/Search.css" media="all">
+    <link rel="stylesheet" type="text/css" href="css/Footer.css" media="all">
 </head>
 <body>
+<nav id="nav">
+    <ul class="nav-left">
+        <li>
+            <a href="main.html">首页</a>
+        </li>
+        <li>
+            <a href="browse.html">浏览</a>
+        </li>
+        <li class="active">搜索</li>
+    </ul>
+    <div class="drop-toggle">
+        <span id="myAccount">个人中心
+            <i class="icon-caret-down"></i>
+        </span>
+        <ul class="dropdown-menu">
+            <li>
+                <a href="upload.html">
+                    <img src="img/upload.svg" alt="upload" width="20" height="20">上传
+                </a>
+            </li>
+            <li>
+                <a href="myPhoto.html">
+                    <img src="img/image.svg" alt="image" width="20" height="20"> 我的照片
+                </a>
+            </li>
+            <li>
+                <a href="like.html">
+                    <img src="img/like_filled.svg" alt="like" width="20" height="20">我的收藏
+                </a>
+            </li>
+            <li>
+                <a href="index.html">
+                    <img src="img/user.svg" alt="login" width="20" height="20">登入
+                </a>
+            </li>
+        </ul>
+    </div>
+</nav>
 
+<div class="contents">
+    <div class="title">我的照片</div>
+    <hr>
+    <div id="title">森林物语</div>
+    <span id="author">by Sherlock Watson</span>
+    <img src="img/s.jpg" alt="picture">
+    <div class="aside-right">
+        <div class="like-number">
+            <div class="title">评分</div>
+            <hr>
+            <div class="like-number-number">100+</div>
+        </div>
+
+        <div class="image-details">
+            <div class="title">图片详细信息</div>
+            <hr>
+            <ul class="image-details">
+                <li>
+                    内容：风景
+                </li>
+                <li>
+                    国家：北境之国
+                </li>
+                <li>
+                    城市：临冬城
+                </li>
+            </ul>
+        </div>
+        <input type="button" onclick="alert('已收藏')" value="收藏">
+    </div>
+
+    <p>
+        长夜将至， 我从今开始守望， 至死方休。 我将不娶妻， 不封地， 不生子。 我将不戴宝冠， 不争荣宠。
+        我将尽忠职守， 生死于斯。 我是黑暗中的利剑， 长城上的守卫， 抵御寒冷的烈焰， 破晓时分的光线，
+        唤醒眠者的号角， 守护王国的铁卫。 我将生命与荣耀献给守夜人， 今夜如此， 夜夜皆然。长夜将至，
+        我从今开始守望， 至死方休。 我将不娶妻， 不封地， 不生子。 我将不戴宝冠， 不争荣宠。
+        我将尽忠职守， 生死于斯。 我是黑暗中的利剑， 长城上的守卫， 抵御寒冷的烈焰， 破晓时分的光线，
+        唤醒眠者的号角， 守护王国的铁卫。 我将生命与荣耀献给守夜人， 今夜如此， 夜夜皆然。
+    </p>
+</div>
+
+<footer>
+    Copyright &copy; 2019-2021 May the force be with you. All Rights Reserved. 备案号浙FORCE备19930号-9
+</footer>
 </body>
 </html>
